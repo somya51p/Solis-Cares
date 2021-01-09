@@ -62,11 +62,11 @@ def launchthread():
         curr_time = (hr*60) + mi
         
         if(check_value1.get() == 1):
-            if(abs(curr_time - init_time)%2 == 0):
+            if(abs(curr_time - init_time)%20 == 0):
                 notifyMe("LOOK AWAY.","Ask blind people the importance of Eyes.", "./eyes.ico", 2)
 
         if(check_value2.get() == 1):
-            if(abs(curr_time - init_time)%3 == 0):
+            if(abs(curr_time - init_time)%60 == 0):
                 notifyMe("Have a Sip.","pani peelo fraands", "./water.ico", 2)
         
         if(check_value3.get() == 1):
